@@ -17,7 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(switchRootController) name:@"swithRootViewControllerNotification" object:nil];
     return YES;
+}
+
+-(void)switchRootController
+{
+    UIViewController *controller = [[UIViewController alloc] init];
+    controller.view.backgroundColor = [UIColor greenColor];
+    self.window.rootViewController = controller;
 }
 
 

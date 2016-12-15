@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEABC8F31DFD838300751336 /* HTNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEABC8F21DFD838300751336 /* HTNavController.m */; };
+		BEABC8F61DFD927100751336 /* UIView+PositionExt.m in Sources */ = {isa = PBXBuildFile; fileRef = BEABC8F51DFD927100751336 /* UIView+PositionExt.m */; };
 		BED40D6B1DFD82AD0026029B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BED40D6A1DFD82AD0026029B /* main.m */; };
 		BED40D6E1DFD82AD0026029B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BED40D6D1DFD82AD0026029B /* AppDelegate.m */; };
 		BED40D711DFD82AD0026029B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED40D701DFD82AD0026029B /* ViewController.m */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BEABC8F11DFD838300751336 /* HTNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTNavController.h; sourceTree = "<group>"; };
+		BEABC8F21DFD838300751336 /* HTNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTNavController.m; sourceTree = "<group>"; };
+		BEABC8F41DFD927100751336 /* UIView+PositionExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PositionExt.h"; sourceTree = "<group>"; };
+		BEABC8F51DFD927100751336 /* UIView+PositionExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PositionExt.m"; sourceTree = "<group>"; };
 		BED40D661DFD82AD0026029B /* HTNavPanPopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTNavPanPopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED40D6A1DFD82AD0026029B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BED40D6C1DFD82AD0026029B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEABC8F01DFD836900751336 /* HTNav */ = {
+			isa = PBXGroup;
+			children = (
+				BEABC8F41DFD927100751336 /* UIView+PositionExt.h */,
+				BEABC8F51DFD927100751336 /* UIView+PositionExt.m */,
+				BEABC8F11DFD838300751336 /* HTNavController.h */,
+				BEABC8F21DFD838300751336 /* HTNavController.m */,
+			);
+			path = HTNav;
+			sourceTree = "<group>";
+		};
 		BED40D5D1DFD82AD0026029B = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +75,7 @@
 		BED40D681DFD82AD0026029B /* HTNavPanPopDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEABC8F01DFD836900751336 /* HTNav */,
 				BED40D6C1DFD82AD0026029B /* AppDelegate.h */,
 				BED40D6D1DFD82AD0026029B /* AppDelegate.m */,
 				BED40D6F1DFD82AD0026029B /* ViewController.h */,
@@ -152,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED40D711DFD82AD0026029B /* ViewController.m in Sources */,
+				BEABC8F31DFD838300751336 /* HTNavController.m in Sources */,
 				BED40D6E1DFD82AD0026029B /* AppDelegate.m in Sources */,
+				BEABC8F61DFD927100751336 /* UIView+PositionExt.m in Sources */,
 				BED40D6B1DFD82AD0026029B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YTV9736654;
 				INFOPLIST_FILE = HTNavPanPopDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xianz.HTNavPanPopDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YTV9736654;
 				INFOPLIST_FILE = HTNavPanPopDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xianz.HTNavPanPopDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +332,7 @@
 				BED40D7F1DFD82AD0026029B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
